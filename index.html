@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        <title></title>
+
+    <!--Plugged in the appropriate links from the Jawg Lab Website for the Jawg.Streets map.-->
+    <link rel="stylesheet" href="lib/scrollmap.css">
+    <link rel="stylesheet" href="lib/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.css" />
+    <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+    <!--you can also place internal styles here;
+             place these within <style> tags-->
+
+</head>
+
+<body>
+    <!--put your initial page content here-->
+    <div class="center">
+        <h1>The True Cost of Cars</h1>
+        <p>Do we know just how bad cars can be?</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/car_accident1.jpg">
+        <b>Image of a standard car accident.</b>
+    </div>
+
+    <div class="center">
+        <p>The United States has always been a car-dominant nation. With infrastructure dedicated mostly towards cars scattered all over the US, the people of the US rely heavily on cars to live their lives. This, however, can prove fatal. Cars can be a deadly tool which takes up to tens of thousands of lives each year. Many metros across the US are attempting to shift towards safer infrastructure, such as trains, buses, bikes and so forth. However, this requires a lot of tax dollars and years of planning to create. </p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/infrastructure.jpeg">
+        <b>A road in the US, typically planned for cars more than any other form of transportation.</b>
+    </div>
+
+    <div class="center">
+        <p>This can be alarming. Without proper infrastructure and with the US population constantly growing, more people will have to rely on cars to drive to places such as work or to grocery stores. No region within the US has had a greater increase in population than the south. With Texas, Florida and North Carolina exploding in population, more people are moving to that region than anywhere else in the nation. Although regional growth is good, it comes at some costs.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/cumulative-pop-change-by-region2020.jpg">
+        <b>An image showing the population change of the US between April of 2020 and July of 2021.</b>
+    </div>
+
+    <div class="center">
+        <p>The southern region of the US contains the states with some of the highest car accident fatality rates in the US. According to World Population Review, out of the 16 states that make up the south, 14 of those states rank in the top half of car fatality rate, with 6 of those states being within the top 10. With the rapid population growth in the region, this seems like a recipe for disaster. Has it been? Let's see how these states have faired over the years:</p>
+    </div>
+
+    <div id='mapid' style='width: 400px; height: 400px;' class="center"></div>
+    <div id="panel" class="center"></div>
+
+    <div class="center">
+        <p>As you scroll through the years, you can see that it is a mixed bag. With a drastic increase in car accidents during to covid pandemic due to wreckless drivers on empty roads, it caused a massive spike in fatalities which most states saw peak fatality rates. Ever since then, most of the fatality rates have gone down for most states. From 2018 to 2023 each state in the south but one had an increased amount of fatal accidents. This can be due to a multitude of factors, such as increase in population or people adapting back to their commute after the pandemic.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/Fatality-Licensed_Driver_Trends.png">
+        <b>A graph detailing the number of driver fatalities per year in the US per year. As you can see, 2020 and 2021 were some of the highest recorded fatality rate years within the last 10 years.</b>
+    </div>
+
+    <div class="center">
+        <p>What can we do to prevent fatal accidents? For one, implementing improved infrastructure across each state. It would be hard for people to give up their right to drive, but creating new transportation opportunities can certainly help people find other ways to get to the places they need to. Another thing we can do is outreach. Some people still do not use seatbelts while in a car. Really enforcing the use of seatbelts can help save people from getting tossed from vehicles if they are involved in an accident. Finally, improving vehicle safety standards. Although cars have been imrpoving when it comes to safety measures, the automobile industry can do more. They can try and improve driver safety in more ways. For example, they can reduce car accidents through improved LIDAR systems or advanced safety features.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/c76f3658aa5d930639218baefe91284d.png">
+        <b>A picture of downtown Tokyo, Japan, showing improved sustainable infrastructure.</b>
+
+    <div class="fit">
+        <p>There are plenty of other methods that can help reduce car fatalities, but as long as the US is a car-dominated society, car fatalities will continue to occur. With the southern region of the United States, as well as the entirety of the United States, growing in population, there is hope that we can develop better infrastructure that can connect us all and make our travels as safe as can be. If there is one takeaway from this map, it is to always stay safe on the road!</p>
+    </div>
+
+    <div>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p>Sources: </p>
+        <p> </p>
+        <p>Tileset from JawgMaps</p>
+        <p> </p>
+        <p>Map data from OpenStreetMap</p>
+        <p> </p>
+        <p>State Population: https://www.macrotrends.net/global-metrics/states/arkansas/population#google_vignette</p>
+        <p> </p>
+        <p>Accident Data: https://www-fars.nhtsa.dot.gov/States/StatesFatalitiesFatalityRates.aspx</p>
+        <p> </p>
+        <p>Legend Image: https://ar.inspiredpencil.com/pictures-2023/red-circle-outline</p>
+        <p> </p>
+        <p>Car Accident Image: https://www.amirlawgroup.com/car-accidents/</p>
+        <p> </p>
+        <p>American Infrastructure Road Image: https://www.pexels.com/photo/a-view-of-a-busy-road-14790618/</p>
+        <p> </p>
+        <p>Population Change Image: https://hoptownchronicle.org/analysis-souths-population-growth-can-create-prosperity-if-local-govts-support-entrepreneurs/</p>
+        <p> </p>
+        <p>Car Accident Graph: https://driving-tests.org/driving-statistics/</p>
+        <p> </p>
+        <p>Sustainable Infrastructure Image: https://www.pinterest.com/pin/what-the-world-can-learn-from-life-under-tokyos-rail-tracks--613545149264347504/</p>
+    </div>
+    <!--you can also use this space for internal scripts;
+        place these within <script> tags-->
+    <!--put your external script links here-->
+    <script src="lib/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
+</body>
+
+</html>
